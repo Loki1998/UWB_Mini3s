@@ -1,0 +1,214 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: cui hongji, BUPT, LIC=YA301-CLTC3-XUI41-C6TSX-88HHC-65FJ9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  D:\DownloadExe\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\16631\Desktop\UWB\mini3s\Mini3s_f103_V1.8.1_dma_plus_vcp\USER\SPI.uvprojx
+Project File Date:  05/09/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\DownloadExe\MDK\ARM\ARMCC\Bin'
+Build target 'TREK1000'
+compiling instance_calib.c...
+compiling instance.c...
+..\HARDWARE\application\instance.c(226): warning:  #188-D: enumerated type mixed with another type
+              inst->nextState = 0; //clear
+..\HARDWARE\application\instance.c(315): warning:  #188-D: enumerated type mixed with another type
+                  inst->nextState = 0; //clear
+..\HARDWARE\application\instance.c: 2 warnings, 0 errors
+compiling instance_common.c...
+..\HARDWARE\application\instance_common.c(155): warning:  #188-D: enumerated type mixed with another type
+      instance_data[0].mode =  inst_mode;                   // set the role
+..\HARDWARE\application\instance_common.c(747): warning:  #161-D: unrecognized #pragma
+  #pragma GCC optimize ("O0")
+..\HARDWARE\application\instance_common.c: 2 warnings, 0 errors
+compiling deca_range_tables.c...
+compiling deca_params_init.c...
+compiling deca_device.c...
+..\HARDWARE\decadriver\deca_device.c(1181): warning:  #223-D: function "writetospi_serial" declared implicitly
+      return 
+ritetospi(cnt,header,length,buffer);
+..\HARDWARE\decadriver\deca_device.c(1258): warning:  #223-D: function "readfromspi_serial" declared implicitly
+      return 
+eadfromspi(cnt, header, length, buffer);  // result is stored in the buffer
+..\HARDWARE\decadriver\deca_device.c(1280): warning:  #68-D: integer conversion resulted in a change of sign
+      uint32  regval = 
+WT_ERROR ;
+..\HARDWARE\decadriver\deca_device.c(1313): warning:  #68-D: integer conversion resulted in a change of sign
+      uint16  regval = 
+WT_ERROR ;
+..\HARDWARE\decadriver\deca_device.c(1709): warning:  #68-D: integer conversion resulted in a change of sign
+          return 
+WT_ERROR;
+..\HARDWARE\decadriver\deca_device.c: 5 warnings, 0 errors
+compiling deca_mutex.c...
+compiling deca_spi.c...
+compiling device_info.c...
+..\HARDWARE\platform\device_info.c(35): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	sprintf((unsigned char*)&buff_sn[0],"AT+SN=%08x-%08x-%08x-1-1.0\r\n",CpuID[0],CpuID[1],CpuID[2]);
+..\HARDWARE\platform\device_info.c(66): warning:  #177-D: variable "temp" was declared but never referenced
+  	u16 temp[50];
+..\HARDWARE\platform\device_info.c(67): warning:  #177-D: variable "count" was declared but never referenced
+  	u8 count=0;
+..\HARDWARE\platform\device_info.c: 3 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling main.c...
+main.c(209): warning:  #68-D: integer conversion resulted in a change of sign
+              return(-1) ;
+main.c(218): warning:  #68-D: integer conversion resulted in a change of sign
+      if (0 > result) return(-1) ; // Some failure has occurred
+main.c(226): warning:  #68-D: integer conversion resulted in a change of sign
+          return(-1) ;
+main.c(517): warning:  #177-D: variable "an" was declared but never referenced
+          	int an = 0;
+main.c(519): warning:  #550-D: variable "reg1" was set but never used
+          	uint32 reg1, reg2;
+main.c(519): warning:  #550-D: variable "reg2" was set but never used
+          	uint32 reg1, reg2;
+main.c(391): warning:  #177-D: variable "toggle" was declared but never referenced
+  	int toggle = 0;
+main.c(393): warning:  #177-D: variable "t" was declared but never referenced
+  	u8 t=0;
+main.c(394): warning:  #177-D: variable "j" was declared but never referenced
+  	u8 j,mask=0;
+main.c(394): warning:  #177-D: variable "mask" was declared but never referenced
+  	u8 j,mask=0;
+main.c(396): warning:  #550-D: variable "len" was set but never used
+  	u8 len;
+main.c(398): warning:  #177-D: variable "times" was declared but never referenced
+  	u16 times=0;
+main.c: 13 warnings, 0 errors
+compiling led.c...
+compiling port.c...
+compiling stmflash.c...
+compiling hw_config.c...
+compiling usb_desc.c...
+compiling usb_endp.c...
+compiling usb_istr.c...
+compiling usb_it.c...
+compiling usb_prop.c...
+compiling usb_pwr.c...
+compiling usb_init.c...
+compiling usb_core.c...
+compiling usb_int.c...
+compiling usb_mem.c...
+compiling usb_sil.c...
+compiling usb_regs.c...
+compiling delay.c...
+compiling usart.c...
+compiling Queue.c...
+..\Public\stdint.h(12): warning:  #47-D: incompatible redefinition of macro "__ARMCLIB_VERSION" (declared at line 22 of "D:\DownloadExe\MDK\ARM\ARMCC\Bin\..\include\string.h")
+  #define __ARMCLIB_VERSION 5030076
+..\Public\Queue.c: 1 warning, 0 errors
+compiling dma.c...
+compiling sys.c...
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=37616 RO-data=1768 RW-data=504 ZI-data=8200  
+FromELF: creating hex file...
+"..\OBJ\SPI.axf" - 0 Error(s), 25 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.0.0.pack
+                Keil::Device:StdPeriph Drivers:Framework:3.5.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Framework Version: 3.5.1
+   * Component: Startup Version: 1.0.0
+   * Component: DMA Version: 3.5.0
+   * Component: EXTI Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: Flash Version: 3.5.0
+   * Component: GPIO Version: 3.5.0
+   * Component: USART Version: 3.5.0
+   * Component: SPI Version: 3.5.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\16631\Desktop\UWB\mini3s\Mini3s_f103_V1.8.1_dma_plus_vcp\USER\RTE
+  C:\Users\16631\Desktop\UWB\mini3s\Mini3s_f103_V1.8.1_dma_plus_vcp\USER\RTE\Device\STM32F103T8
+  D:\DownloadExe\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\DownloadExe\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+  D:\DownloadExe\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+
+   * Component: Keil::Device:StdPeriph Drivers:DMA:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dma.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_dma.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Flash:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_flash.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_flash.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+
+   * Component: Keil::Device:StdPeriph Drivers:SPI:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_spi.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_spi.h
+Build Time Elapsed:  00:00:17
+</pre>
+</body>
+</html>
